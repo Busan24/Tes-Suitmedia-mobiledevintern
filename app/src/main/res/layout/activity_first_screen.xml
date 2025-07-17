@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FirstScreen">
+
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:paddingHorizontal="32dp"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Icon -->
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:src="@drawable/ic_photo"
+            android:layout_marginBottom="55dp" />
+
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@drawable/edit_box"
+            android:hint="Name"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppinslight"
+            android:singleLine="true"
+            android:imeOptions="actionDone" />
+
+        <!-- Palindrome Input -->
+        <EditText
+            android:id="@+id/palindrome"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@drawable/edit_box"
+            android:hint="Palindrome"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppinslight"
+            android:layout_marginBottom="45dp"
+            android:singleLine="true"
+            android:imeOptions="actionDone" />
+
+        <!-- Check Button -->
+        <Button
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@drawable/button_box"
+            android:text="CHECK"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinslight"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@drawable/button_box"
+            android:text="NEXT"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinslight" />
+    </LinearLayout>
+
+</RelativeLayout>
